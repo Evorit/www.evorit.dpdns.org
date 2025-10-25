@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evorit Lab</title>
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#111318;
+      --ink:#e8e8ea;
+      --muted:#a8adbd;
+      --accent:#76e4f7;
+      --accent-2:#9ae6b4;
+      --line:#1b1e26;
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,Arial,"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:1100px;margin:0 auto;padding:48px 20px 64px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:24px;margin-bottom:28px;flex-wrap:wrap
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#09242b;font-weight:900;letter-spacing:1px
+    }
+    h1{font-size:28px;letter-spacing:.4px;margin:0}
+    .tag{font-size:14px;color:var(--muted)}
+    section.card{
+      background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:22px 22px;
+      margin-bottom:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.02);
+    }
+    h2{font-size:20px;margin:6px 0 10px}
+    h3{font-size:16px;margin:18px 0 10px;color:#cfd3df}
+    p{line-height:1.75;margin:8px 0;color:#d9dbe3}
+    ul{margin:10px 0 0 18px;color:#d9dbe3}
+    li{margin:6px 0}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+      border:1px solid var(--line);padding:8px 12px;margin:8px 8px 0 0;
+      background:rgba(255,255,255,.02);font-size:13px;color:#d7dbea
+    }
+    .hero{
+      background:radial-gradient(1200px 500px at 30% -10%, rgba(118,228,247,.20), transparent 60%),
+                 radial-gradient(900px 400px at 80% -10%, rgba(154,230,180,.18), transparent 60%);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:26px 22px;margin:0 0 18px 0;
+    }
+    .hero h2{font-size:22px;margin:0 0 8px}
+    .footer{margin-top:26px;color:var(--muted);font-size:13px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0e1116;border:1px solid #1f2430;border-radius:8px;padding:2px 6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="logo.png" height="50px" width="50px">
+        <div>
+          <h1>Evorit Lab</h1>
+          <div class="tag">Evolve × Spirit / Rite — 科技与文化融合的进化实验室</div>
+        </div>
+      </div>
+      <div>
+        <span class="pill">#evolve</span>
+        <span class="pill">#spirit</span>
+        <span class="pill">#iteration</span>
+        <span class="pill">#culture</span>
+        <span class="pill">#tech</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>品牌核心</h2>
+      <p><strong>Evorit Lab</strong> 是一个将 <em>科技的迭代</em> 与 <em>文化的精神</em> 融合的进化实验室。它既是工程化的方法论平台，也是共同成长的文化场域。</p>
+      <p>我们相信：进化不仅是代码的更新、架构的演变，更是价值的沉淀、信念的传承。技术与文化相互作用，才让系统真正具备韧性与生命力。</p>
+    </section>
+
+    <section class="card">
+      <h2>我们的立场</h2>
+      <ul>
+        <li><strong>技术层面</strong>：以小步快跑的工程节奏，构建可持续迭代的产品与平台；用 I/O 的思维与世界交互。</li>
+        <li><strong>文化层面</strong>：以开放、共识和仪式感，保持团队的节律与方向；让变化中的价值被记住并传承。</li>
+        <li><strong>融合视角</strong>：科技是进化的工具，文化是进化的节奏；两者交织成有机体般的自我更新。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>我们实践</h2>
+      <ul>
+        <li>研发 <strong>云原生服务与智能产品</strong>，同时在社区中推行知识共享与经验传递。</li>
+        <li>保持 <strong>工程化的仪式</strong>（评审、回顾、节律），同时构建文化上的长期主义。</li>
+        <li>通过 <strong>开源、文档与作品</strong>，让技术产出与文化积累相互强化。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>我们的口号</h2>
+      <p><strong>“Evolve in Rhythm — 在节律中进化。”</strong></p>
+      <p>每一次迭代，都是技术与文化的双重进化。</p>
+    </section>
+
+    <section class="card">
+      <h2>在 GitHub 上找到我们</h2>
+      <p>🌍 <a href="https://github.com/Evorit" target="_blank">https://github.com/Evorit</a></p>
+      <p>组织名称：<strong>Evorit Lab</strong></p>
+    </section>
+
+    <div class="footer">
+      © Evorit Lab — Evolve × Spirit / Rite
+    </div>
+  </div>
+</body>
+</html>
